@@ -11,15 +11,15 @@ function App(): JSX.Element {
   return (
     <div className="w-screen h-screen">
       <TopBar />
-      <div className="pt-10 h-fill w-fill p-3">
+      <div className=" pt-[2rem] h-fill w-fill p-3">
         <div className="h-full w-full flex lg:hidden">
           <ResizablePanelGroup direction="horizontal" className="border rounded-lg">
-            <ResizablePanel minSize={0} maxSize={20}>
-              <div>Files</div>
+            <ResizablePanel minSize={0} maxSize={15}>
+              <div className="h-fill w-fill font-Noto bg-background/90"></div>
             </ResizablePanel>
             <ResizableHandle />
             <ResizablePanel>
-              <ResizablePanelGroup direction={'vertical'}>
+              <ResizablePanelGroup direction={'vertical'} className="bg-background/70">
                 <ResizablePanel>
                   <EditorArea />
                 </ResizablePanel>
@@ -34,13 +34,17 @@ function App(): JSX.Element {
 
         <div className="h-full w-full hidden lg:flex">
           <ResizablePanelGroup direction="horizontal" className="border rounded-lg">
-            <ResizablePanel minSize={0} maxSize={15}>
-              <div>Files</div>
+            <ResizablePanel minSize={10} maxSize={15} className="bg-background/90">
+              <div></div>
             </ResizablePanel>
             <ResizableHandle />
-            <ResizablePanel><EditorArea /></ResizablePanel>
+            <ResizablePanel className="bg-background/70">
+              <EditorArea />
+            </ResizablePanel>
             <ResizableHandle withHandle />
-            <ResizablePanel><MarkdownArea /></ResizablePanel>
+            <ResizablePanel className="bg-background/70">
+              <MarkdownArea />
+            </ResizablePanel>
           </ResizablePanelGroup>
         </div>
       </div>
