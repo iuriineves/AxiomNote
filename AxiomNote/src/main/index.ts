@@ -2,23 +2,27 @@ import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+const { PARAMS, VALUE, MicaBrowserWindow, IS_WINDOWS_11, WIN10 } = require('mica-electron')
 
 function createWindow(): void {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  const mainWindow = new MicaBrowserWindow({
     frame: false,
     width: 900,
     height: 670,
     show: false,
     icon: icon,
+    transparent: true,
     autoHideMenuBar: true,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       nodeIntegration: true,
       sandbox: false,
-      contextIsolation: false,
+      contextIsolation: false
     }
   })
+
+  mainWindow.setMicaEffect()
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()

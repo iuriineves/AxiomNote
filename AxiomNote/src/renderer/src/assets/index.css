@@ -89,7 +89,35 @@
     --ring: 240 4.9% 83.9%;
   }
 }
- 
+
+h1 {
+  @apply text-4xl;
+  @apply py-3;
+}
+h2 {
+  @apply text-3xl;
+  @apply py-2.5;
+}
+h3 {
+  @apply text-2xl;
+  @apply py-2;
+}
+h4 {
+  @apply text-xl;
+  @apply py-1.5;
+}
+h5 {
+  @apply text-lg;
+  @apply py-1;
+}
+h6 {
+  @apply text-base;
+}
+
+body {
+  @apply bg-background/25;
+}
+
 @layer base {
   * {
     @apply border-border;
