@@ -1,6 +1,5 @@
 import Markdown from 'react-markdown'
 import { createSlice, configureStore, PayloadAction } from '@reduxjs/toolkit'
-import { setMarkdown$ } from '@mdxeditor/editor'
 import { useState } from 'react'
 
 const markdownSlice = createSlice({
@@ -20,14 +19,17 @@ const store = configureStore({
   reducer: markdownSlice.reducer
 })
 
-
 export default function MarkdownArea(): JSX.Element {
   const [markdown, setMarkdown] = useState('')
 
   store.subscribe(() => {
     setMarkdown(store.getState().value)
   })
-  return <Markdown>{markdown}</Markdown>
+  return (
+    <Markdown className={'font-Noto text-base h-fill p-2 overflow-y-auto break-words'}>
+      {markdown}
+    </Markdown>
+  )
 }
 
 export function updateMarkdown(raw: string): void {
