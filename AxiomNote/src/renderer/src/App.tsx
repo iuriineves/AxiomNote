@@ -11,10 +11,10 @@ function App(): JSX.Element {
   return (
     <div className="w-screen h-screen">
       <TopBar />
-      <div className=" pt-[2rem] h-fill w-fill p-3">
+      <div className=" pt-[2.25rem] h-fill w-fill p-3">
         <div className="h-full w-full flex lg:hidden">
           <ResizablePanelGroup direction="horizontal" className="border rounded-lg">
-            <ResizablePanel minSize={0} maxSize={15}>
+            <ResizablePanel minSize={0} maxSize={20}>
               <div className="h-fill w-fill font-Noto bg-background/90"></div>
             </ResizablePanel>
             <ResizableHandle />
@@ -34,7 +34,7 @@ function App(): JSX.Element {
 
         <div className="h-full w-full hidden lg:flex">
           <ResizablePanelGroup direction="horizontal" className="border rounded-lg">
-            <ResizablePanel minSize={10} maxSize={15} className="bg-background/90">
+            <ResizablePanel minSize={10} maxSize={20} className="bg-background/90">
               <div></div>
             </ResizablePanel>
             <ResizableHandle />
