@@ -1,6 +1,6 @@
 # Welcome to AxiomNote!
 
-*AxiomNote* (Axiom + Note) is a free and open source project that aims to provide an easy but complete note-taking app for all your mathematical needs!
+*AxiomNote* (Axiom + Note) is a free and open source project that aims to provide an complete but easy to use note-taking app for all your mathematical needs!
 
 ## What can I do with AxiomNote?
 
