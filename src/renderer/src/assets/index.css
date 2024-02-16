@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon-variation-settings {
+  font-variation-settings: 'wght' 200, 'FILL' 1;
+}
+
+.drag {
+  -webkit-app-region: drag
+}
+
+.no-drag {
+  -webkit-app-region: no-drag
+}
+
+.w-fill {
+  width: -webkit-fill-available;
+}
+
+.h-fill {
+  height: -webkit-fill-available;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+ 
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+ 
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+ 
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+ 
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+ 
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+ 
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+ 
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+ 
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+ 
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+ 
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+h1 {
+  @apply text-4xl;
+  @apply py-3;
+}
+h2 {
+  @apply text-3xl;
+  @apply py-2.5;
+}
+h3 {
+  @apply text-2xl;
+  @apply py-2;
+}
+h4 {
+  @apply text-xl;
+  @apply py-1.5;
+}
+h5 {
+  @apply text-lg;
+  @apply py-1;
+}
+h6 {
+  @apply text-base;
+}
+
+ul, ol{
+  @apply ml-10;
+  @apply my-2;
+}
+
+ul li{
+  @apply list-disc;
+}
+
+ol li {
+  @apply list-decimal;
+}
+
+p {
+  @apply py-2;
+}
+
+body {
+  @apply font-Noto;
+}
+
+.katex {
+  @apply font-Math;
+}
+
+body {
+  @apply bg-background/0;
+}
+
+pre {
+  @apply rounded-lg;
+  @apply border;
+  @apply p-2;
+  @apply bg-background/50;
+  @apply my-2;
+}
+
+pre code {
+  @apply font-Mono;
+  @apply whitespace-break-spaces;
+}
+
+/* Keywords */
+.hljs-keyword {
+  @apply text-purple-500;
+}
+
+/* Strings */
+.hljs-string {
+  @apply text-green-500;
+}
+
+/* Numbers */
+.hljs-number {
+  @apply text-orange-500;
+}
+
+/* Comments */
+.hljs-comment {
+  @apply text-gray-500;
+}
+
+/* Functions */
+.hljs-function {
+  @apply text-blue-500;
+}
+
+.hljs-built_in {
+  @apply text-blue-500;
+}
+
+/* Variables */
+.hljs-variable {
+  @apply text-yellow-500;
+}
+
+/* Operators */
+.hljs-operator {
+  @apply text-indigo-600;
+}
+
+/* Punctuation */
+.hljs-punctuation {
+  @apply text-gray-500;
+}
+
+/* Types */
+.hljs-type {
+  @apply text-orange-600;
+}
+
+/* Constants */
+.hljs-literal {
+  @apply text-gray-500;
+}
+
+/* Attributes */
+.hljs-attr {
+  @apply text-orange-500;
+}
+
+/* Tags */
+.hljs-tag {
+  @apply text-red-500;
+}
+
+/* Classes */
+.hljs-class {
+  @apply text-blue-500;
+}
+
+/* IDs */
+.hljs-id {
+  @apply text-red-500;
+}
+
+/* Functions or Methods */
+.hljs-title {
+  @apply text-blue-500;
+}
+
+.hljs-subst {
+  @apply text-blue-500;
+}
+
+/* Special Keywords (e.g., 'this', 'super' in JavaScript) */
+.hljs-special {
+  @apply text-indigo-600;
+}
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-1;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: 0;
+}
+
+.scrollbar::-webkit-scrollbar-track:hover {
+  border-radius: 100vh;
+  background: 0;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply transition-colors;
+  @apply bg-muted-foreground/50;
+  border-radius: 100vh;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/75;
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
