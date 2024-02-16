@@ -1,34 +1,23 @@
-# axiomnote
+# Welcome to AxiomNote!
 
-An Electron application with React and TypeScript
+*AxiomNote* (Axiom + Note) is a free and open source project that aims to provide an easy but complete note-taking app for all your mathematical needs!
 
-## Recommended IDE Setup
+## What can I do with AxiomNote?
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+With *AxiomNote*, you can write and read [Markdown](https://www.markdownguide.org/basic-syntax/) files, with the added bonus of out-of-the-box [KaTeX](https://katex.org/) integration! With this, you can easily write mathematical expressions.
 
-## Project Setup
+Of course you have your standard suite of features a note-taking app has, such as file searching (not finished), word finder (not finished), etc...
 
-### Install
+## I found a bug! What do I do?
 
-```bash
-$ npm install
-```
+When finding a bug, just create an issue explaining how to reproduce it and what you're tring to achieve. If you feel like you can fix it yourself, you can always make a PR and help me out!
 
-### Development
+## How can I contribute?
 
-```bash
-$ npm run dev
-```
+You can contribute in a few ways. The most direct way of helping me is fixing issues other users have, either by answering them or directly sending a PR with a fix. However, you can also help by translating the app to your native language, translating the docs, fixing typos, etc...
 
-### Build
+Another way to directly support me is by donating whatever you feel like! This is not in any way mandatory, but it would help out a ton! I'm just a highschool student, after all.
 
-```bash
-# For windows
-$ npm run build:win
+## What can I do to the source code?
 
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
-```
+Whatever you want. I'm not picky about what you do with the source code. Make your own app with it. Pick it apart, study it, repackage it and sell it. It's yours to do whatever you feel like.
