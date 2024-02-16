@@ -16,7 +16,7 @@ When finding a bug, just create an issue explaining how to reproduce it and what
 
 You can contribute in a few ways. The most direct way of helping me is fixing issues other users have, either by answering them or directly sending a PR with a fix. However, you can also help by translating the app to your native language, translating the docs, fixing typos, etc...
 
-Another way to directly support me is by donating whatever you feel like! This is not in any way mandatory, but it would help out a ton! I'm just a highschool student, after all.
+Another way to directly support me is by donating whatever you feel like by clicking the little sponsor button! This is not in any way mandatory, but it would help out a ton! I'm just a highschool student, after all.
 
 ## What can I do to the source code?
 
